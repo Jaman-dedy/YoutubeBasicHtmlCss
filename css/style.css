@@ -1,0 +1,140 @@
+.header {
+  grid-area: header;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.5rem;
+}
+.presentation {
+  grid-area: presentation;
+  background-color: #f9f8fd;
+  margin-bottom: 1rem;
+  margin-left: -8px;
+  margin-right: -7px;
+  display: flex;
+  justify-content: space-between;
+}
+.categories {
+  grid-area: categories;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+.items {
+  grid-area: items;
+  margin-bottom: 1rem;
+}
+.footer {
+  grid-area: footer;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "presentation"
+    "categories"
+    "items"
+    "footer";
+  grid-template-rows: 10% 60% 10% 35% 10%;
+  background-color: #fff;
+}
+.leftMenu {
+  height: 5rem;
+  margin-left: 3rem;
+  padding-top: 2.5rem;
+  width: 36rem;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+.menus {
+  width: 10rem;
+  margin-left: 2rem;
+  color: #484646;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.menus img {
+  width: 1.5%;
+}
+.rightAction {
+  height: 5rem;
+  font-size: 1.2rem;
+  padding-top: 2.5rem;
+  color: #484646;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 3rem;
+}
+button {
+  width: 6rem;
+  height: 2.6rem;
+  margin-left: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #eb4d89;
+  color: #fff;
+}
+.left-side-text {
+  width: 46rem;
+  padding: 5rem 0 1rem 3rem;
+}
+.left-side-text span {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+}
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.SecTitle {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #484646;
+  margin-bottom: 8rem;
+}
+.left-side-text button {
+  margin-left: 0rem;
+}
+.right-img {
+  padding: 5.4rem 0;
+}
+.right-img img {
+  width: 84%;
+}
+.pop {
+  width: 5rem;
+  font-size: 1rem;
+  margin-left: 2.7rem;
+  border: 1px solid #48464634;
+  padding: 11px 5px 0;
+  text-align: center;
+  height: 2rem;
+  border-radius: 10px;
+  color: #484646;
+}
+.right {
+  margin-right: 5rem !important;
+}
+.types {
+  color: #484646;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.types span {
+  margin-left: 3rem;
+}
+.cards {
+  margin: 0 2.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 17rem;
+  height: 18rem;
+  background: rgba(144, 143, 188, 0.205);
+  border-radius: 10px;
+}
