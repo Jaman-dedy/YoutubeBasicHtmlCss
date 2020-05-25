@@ -138,3 +138,25 @@ button {
   background: rgba(144, 143, 188, 0.205);
   border-radius: 10px;
 }
+.card img {
+  width: 95%;
+  margin-top: 2.5rem;
+}
+.author {
+  color: #484646;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.5rem;
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  font-size: 0.9rem;
+}
+.author img {
+  width: 30%;
+}
+.user {
+  padding-bottom: 2rem;
+  position: absolute;
+  margin-top: 3.7rem;
+  margin-left: 0.7rem;
+}
