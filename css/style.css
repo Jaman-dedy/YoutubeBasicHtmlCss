@@ -21,13 +21,6 @@
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
 }
-.categories span:hover {
-  cursor: pointer;
-  border: 1px solid #48464634;
-  border-radius: 10px;
-  padding: 11px;
-  font-weight: 500;
-}
 .items {
   grid-area: items;
   margin-bottom: 1rem;
@@ -61,6 +54,9 @@
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
 }
+.popupMenu {
+  display: flex;
+}
 .menus {
   width: 10rem;
   margin-left: 2rem;
@@ -68,6 +64,9 @@
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+}
+.menus:hover {
+  cursor: pointer;
 }
 .menus img {
   width: 1.5%;
@@ -88,14 +87,36 @@ button {
   border: none;
   background-color: #eb4d89;
   color: #fff;
+  transition: width 2s, height 2s, transform 2s;
 }
 button:hover {
   cursor: pointer;
+  width: 8rem;
+  height: 3.6rem;
+  transform: rotate(360deg);
 }
 .left-side-text {
   width: 46rem;
   padding: 5rem 0 1rem 3rem;
+  position: relative;
+  animation: mymoves 3s;
+  animation-fill-mode: both;
 }
+#ltext {
+  animation-timing-function: ease-in;
+}
+#rimg {
+  animation-timing-function: ease-out;
+}
+@keyframes mymoves {
+  from {
+    top: -8rem;
+  }
+  to {
+    top: 0rem;
+  }
+}
+
 .left-side-text span {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -116,9 +137,17 @@ button:hover {
 }
 .right-img {
   padding: 5.4rem 0;
+  position: relative;
+  animation: mymoves 5s;
+  animation-fill-mode: both;
+  transition: width 2s, height 2s, transform 2s;
 }
 .right-img img {
   width: 84%;
+}
+.right-img:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
 .pop {
   width: 5rem;
@@ -138,12 +167,20 @@ button:hover {
   margin-right: 5rem !important;
 }
 .types {
+  width: auto;
   color: #484646;
   font-size: 1rem;
   margin-top: 1rem;
 }
 .types span {
   margin-left: 3rem;
+}
+.types span:hover {
+  cursor: pointer;
+  border: 1px solid #48464634;
+  border-radius: 10px;
+  padding: 11px;
+  font-weight: 500;
 }
 .cards {
   margin: 0 2.6rem 5rem 2.6rem;

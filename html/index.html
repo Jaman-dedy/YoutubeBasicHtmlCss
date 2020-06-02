@@ -34,8 +34,22 @@
           <button>Sign up</button>
         </div>
       </div>
+      <div class="popupMenu">
+        <div>
+          <img src="" alt="">
+          <h5>Buy now and become pro</h5>
+        </div>
+        <div>
+          <img src="" alt="">
+          <h5>Buy now and become pro</h5>
+        </div>
+        <div>
+          <img src="" alt="">
+          <h5>Buy now and become pro</h5>
+        </div>
+      </div>
       <div class="presentation">
-        <div class="left-side-text">
+        <div class="left-side-text" id="ltext">
           <span class="mainTitle"
             >Discover the world's top designs & creatives</span
           >
@@ -47,7 +61,7 @@
             Sign up
           </button>
         </div>
-        <div class="right-img">
+        <div class="right-img" id="rimg">
           <img src="../assets/images/market.png" alt="" />
         </div>
       </div>
@@ -322,19 +336,15 @@
     <script>
       function displayAllFunc() {
         document.getElementById("animation").style.display = "none";
-        document.getElementById("branding").style.display = "none";
         document.getElementById("all").style.display = "block";
       }
       function displayAnimationFunc() {
         document.getElementById("all").style.display = "none";
-        document.getElementById("branding").style.display = "none";
         document.getElementById("animation").style.display = "block";
       }
-      function displayBrandingFunc() {
-        document.getElementById("all").style.display = "none";
-        document.getElementById("branding").style.display = "block";
+      window.onload = function () {
         document.getElementById("animation").style.display = "none";
-      }
+      };
     </script>
   </body>
 </html>
