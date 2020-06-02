@@ -21,12 +21,24 @@
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
 }
+.categories span:hover {
+  cursor: pointer;
+  border: 1px solid #48464634;
+  border-radius: 10px;
+  padding: 11px;
+  font-weight: 500;
+}
 .items {
   grid-area: items;
   margin-bottom: 1rem;
 }
 .footer {
   grid-area: footer;
+  background-color: #f7f7f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0 -8px;
 }
 .container {
   display: grid;
@@ -36,7 +48,7 @@
     "categories"
     "items"
     "footer";
-  grid-template-rows: 10% 50% 10% 35% 10%;
+  grid-template-rows: 4% 25% 4% 47% 20%;
   background-color: #fff;
 }
 .leftMenu {
@@ -77,6 +89,9 @@ button {
   background-color: #eb4d89;
   color: #fff;
 }
+button:hover {
+  cursor: pointer;
+}
 .left-side-text {
   width: 46rem;
   padding: 5rem 0 1rem 3rem;
@@ -116,6 +131,9 @@ button {
   border-radius: 10px;
   color: #484646;
 }
+.pop:hover {
+  cursor: pointer;
+}
 .right {
   margin-right: 5rem !important;
 }
@@ -128,35 +146,125 @@ button {
   margin-left: 3rem;
 }
 .cards {
-  margin: 0 2.6rem;
+  margin: 0 2.6rem 5rem 2.6rem;
   display: flex;
   justify-content: space-between;
 }
+
 .card {
   width: 17rem;
-  height: 18rem;
   background: rgba(144, 143, 188, 0.205);
   border-radius: 10px;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  position: relative;
+}
+@keyframes example {
+  from {
+    top: -10rem;
+    background-color: #eb4d8a33;
+  }
+  to {
+    top: 0rem;
+    background-color: rgba(144, 143, 188, 0.205);
+  }
+}
+.animations {
+  animation: mymove 2s;
+  animation-fill-mode: backwards;
+}
+
+#animation1 {
+  animation-timing-function: linear;
+}
+#animation2 {
+  animation-timing-function: ease;
+}
+#animation3 {
+  animation-timing-function: ease-in;
+}
+#animation4 {
+  animation-timing-function: ease-out;
+}
+#animation5 {
+  animation-timing-function: ease-in-out;
+}
+#animation6 {
+  animation-timing-function: linear;
+}
+#animation7 {
+  animation-timing-function: ease;
+}
+#animation8 {
+  animation-timing-function: ease-in;
+}
+#animation9 {
+  animation-timing-function: ease-out;
+}
+#animation10 {
+  animation-timing-function: ease-in-out;
+}
+#animation11 {
+  animation-timing-function: ease-in-out;
+}
+#animation12 {
+  animation-timing-function: ease-in-out;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
 }
 .card img {
   width: 95%;
+  height: 66%;
   margin-top: 2.5rem;
 }
 .author {
   color: #484646;
   font-family: "Montserrat", sans-serif;
-  margin-top: 1.5rem;
   position: absolute;
   width: 10rem;
   height: 4rem;
   font-size: 0.9rem;
 }
 .author img {
-  width: 30%;
+  width: 25%;
 }
 .user {
   padding-bottom: 2rem;
   position: absolute;
   margin-top: 3.7rem;
   margin-left: 0.7rem;
+}
+.brand {
+  width: 16.6%;
+  color: #484646;
+  margin-right: 7rem;
+}
+.brand span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.9rem;
+  color: #eb4d89;
+}
+.brand p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.offers {
+  width: 16.6%;
+}
+.offers span {
+  display: inline-block;
+}
+.offers ul {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0rem;
+  color: #484646;
+  line-height: 2;
+  font-size: 0.7rem;
 }
