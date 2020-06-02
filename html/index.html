@@ -322,11 +322,18 @@
     <script>
       function displayAllFunc() {
         document.getElementById("animation").style.display = "none";
+        document.getElementById("branding").style.display = "none";
         document.getElementById("all").style.display = "block";
       }
       function displayAnimationFunc() {
         document.getElementById("all").style.display = "none";
+        document.getElementById("branding").style.display = "none";
         document.getElementById("animation").style.display = "block";
+      }
+      function displayBrandingFunc() {
+        document.getElementById("all").style.display = "none";
+        document.getElementById("branding").style.display = "block";
+        document.getElementById("animation").style.display = "none";
       }
     </script>
   </body>
