@@ -50,12 +50,40 @@
   padding-top: 2.5rem;
   width: 36rem;
 }
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
 }
 .popupMenu {
   display: flex;
+  width: 60%;
+  height: 35%;
+  position: fixed;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  z-index: 100;
+  margin-top: 4rem;
+  margin-left: 10rem;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.menuContent {
+  width: 28%;
+  background-color: #4846461e;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+  padding: 0.5rem;
+  text-align: center;
+}
+.menuContent img {
+  width: 100%;
+  border-radius: 10px;
 }
 .menus {
   width: 10rem;

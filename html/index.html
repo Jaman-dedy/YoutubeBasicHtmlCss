@@ -10,13 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,800&display=swap"
       rel="stylesheet"
     />
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
   </head>
   <body>
-    <div class="container">
+    <div id="container" class="container">
       <div class="header">
         <div class="leftMenu">
           <span class="logo">driblle </span>
-          <span class="menus"
+          <span id="menus" class="menus"
             >Explore
             <img src="../assets/images/down-arrow.png" alt="" />
           </span>
@@ -34,21 +37,21 @@
           <button>Sign up</button>
         </div>
       </div>
-      <div class="popupMenu">
-        <div>
-          <img src="" alt="">
+      <div class="popupMenu" id="popupMenu">
+        <div class="menuContent">
+          <img src="../assets/images/man_pop_menu.png" alt="" />
           <h5>Buy now and become pro</h5>
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="menuContent">
+          <img src="../assets/images/lady_pop_menu.png" alt="" />
           <h5>Buy now and become pro</h5>
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="menuContent">
+          <img src="../assets/images/img_pop_menu3.png" alt="" />
           <h5>Buy now and become pro</h5>
         </div>
       </div>
-      <div class="presentation">
+      <div id="presentation" class="presentation">
         <div class="left-side-text" id="ltext">
           <span class="mainTitle"
             >Discover the world's top designs & creatives</span
@@ -344,7 +347,19 @@
       }
       window.onload = function () {
         document.getElementById("animation").style.display = "none";
+        // document.getElementById("all").style.display = "none";
+        // document.getElementById("popupMenu").style.display = "none";
       };
+      $(document).ready(function () {
+        $("#popupMenu").hide();
+        $("#animation").hide();
+        $("#menus").click(function () {
+          $("#popupMenu").show();
+        });
+        $("#presentation").click(function () {
+          $("#popupMenu").hide();
+        });
+      });
     </script>
   </body>
 </html>
